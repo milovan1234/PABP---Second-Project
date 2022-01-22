@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using PABP_Second_Project.Repositories;
+using DAL.Repositories;
 
 namespace PABP_Second_Project.Controllers
 {

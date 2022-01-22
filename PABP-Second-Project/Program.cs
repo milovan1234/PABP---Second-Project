@@ -1,5 +1,5 @@
+using DAL.Models;
 using Microsoft.EntityFrameworkCore;
-using PABP_Second_Project.Models;
 using PABP_Second_Project.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
