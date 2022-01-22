@@ -1,4 +1,4 @@
-namespace DAL.Models
+namespace PABP_Second_Project.Models
 {
     public class ErrorViewModel
     {

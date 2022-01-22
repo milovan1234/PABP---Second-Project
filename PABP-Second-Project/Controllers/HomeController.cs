@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using DAL.Models;
+using PABP_Second_Project.Models;
 using System.Diagnostics;
 
 namespace PABP_Second_Project.Controllers
