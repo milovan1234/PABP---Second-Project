@@ -10,6 +10,8 @@ namespace PABP_Second_Project_API.Profiles
         {
             CreateMap<Product, ProductVM>();
             CreateMap<ProductVM, Product>();
+            CreateMap<ProductCreateVM, Product>();
+            CreateMap<Product, ProductCreateVM>();
         }
     }
 }

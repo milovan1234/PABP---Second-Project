@@ -32,6 +32,17 @@ namespace PABP_Second_Project_API.Services
             return this._productsRepository.GetById(productId);
         }
 
+        public Product CreateProduct(Product product)
+        {
+            if (product.ProductName == "")
+            {
+                throw new Exception("The product name must be filled in.");
+            }
+            this._productsRepository.Add(product);
+
+            return this._productsRepository.GetById(product.ProductId);
+        }
+
         public void DeleteProduct(int productId)
         {
             Product product = this.GetProductById(productId);

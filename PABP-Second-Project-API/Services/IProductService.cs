@@ -8,5 +8,6 @@ namespace PABP_Second_Project_API.Services
         Product GetProductById(int productId);
         Product UpdateProduct(int productId, Product product);
         void DeleteProduct(int productId);
+        Product CreateProduct(Product product);
     }
 }

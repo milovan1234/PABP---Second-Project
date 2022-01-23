@@ -43,6 +43,18 @@ namespace PABP_Second_Project_API.Controllers
         }
 
         /// <summary>
+        /// Create product.
+        /// </summary>
+        /// <param name="product">Product model.</param>
+        /// <returns>Created product.</returns>
+        [HttpPost]
+        [Route("")]
+        public IActionResult CreateProduct([FromBody]ProductCreateVM product)
+        {
+            return Ok(this._mapper.Map<ProductVM>(this._productsService.CreateProduct(this._mapper.Map<Product>(product))));
+        }
+
+        /// <summary>
         /// Update product for specified product identifier.
         /// </summary>
         /// <param name="productId">Product identifier.</param>
