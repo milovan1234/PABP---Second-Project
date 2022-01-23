@@ -14,5 +14,10 @@ namespace DAL.Repositories
         {
             return this._context.Suppliers;
         }
+
+        public Supplier GetById(int supplierId)
+        {
+            return this._context.Suppliers.Single(x => x.SupplierId == supplierId);
+        }
     }
 }
