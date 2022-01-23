@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace PABP_Second_Project_API.Filters
 {
-    public class APIExceptionHandler : IExceptionFilter
+    public class ApiExceptionFilter : IExceptionFilter
     {
         public void OnException(ExceptionContext context)
         {

@@ -1,6 +1,7 @@
 using DAL.Models;
 using DAL.Repositories;
 using Microsoft.EntityFrameworkCore;
+using PABP_Second_Project_API.Filters;
 using PABP_Second_Project_API.Services;
 using System.Reflection;
 
@@ -8,7 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(x =>
+{
+    x.Filters.Add<ApiExceptionFilter>();
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(x => 

@@ -13,7 +13,6 @@ namespace PABP_Second_Project_API.Controllers
     /// </summary>
     [Route("api/products")]
     [ApiController]
-    [TypeFilter(typeof(APIExceptionHandler))]
     public class ProductsController : ControllerBase
     {
         private readonly IProductService _productsService;
