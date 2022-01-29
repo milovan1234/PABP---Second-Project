@@ -32,6 +32,7 @@ builder.Services.AddScoped<ISuppliersRepository, SupplierRepository>();
 builder.Services.AddScoped<ICategoriesRepository, CategoriesRepository>();
 
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 builder.Services.AddAutoMapper(typeof(Program));
 
